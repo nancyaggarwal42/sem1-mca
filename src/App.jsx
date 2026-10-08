@@ -5,9 +5,9 @@ import SignIn from './pages/SignIn'
 
 const App = () => {
   return (
-    <div className='flex flex-col gap-10'>
-      {/* <Home /> */}
-    <SignIn />
+    <div>
+      <Home />
+    {/* <SignIn /> */}
 
     
     </div>

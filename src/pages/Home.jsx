@@ -1,16 +1,39 @@
-import React from 'react'
+import CategoryCard from "../components/CategoryCard";
+import Navbar from "../components/Navbar";
 
-const Home = () => {
+
+
+
+function Home() {
   return (
-    <div className='h-screen  bg-amber-950 w-full'>
-        <div className=" bg-gray-600 absolute top-1/2 left-1/2">
-            <div className="flex bg-amber-500 flex-col px-4">
-            <h2 className='text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-white'>Serenity Steps</h2>
-            <p className='text-xl text-white mt-3 sm:mt-4 sm:text-lg md:text-xl lg:text-2xl'>Small steps towards change..</p>
+    <div className="h-screen w-full px-4 py-3">
+
+      <div className="w-full py-2  ">
+        <Navbar />
+
+
+        <div className="flex flex-col mt-8 gap-10">
+          <CategoryCard
+          title="Emotional Unwellness"
+          description="Stress Management • Anxiety • Emotional Balance"
+        />
+
+        <CategoryCard
+          title="Addictions"
+          description="Internet • Gaming • Shopping"
+        />
+
+        <CategoryCard
+          title="Mental health conditions"
+          description=""
+        />
         </div>
-        </div>
+        <h2 className="mt-6 text-2xl text-center cursor-pointer">Apply</h2>
+
+      </div>
+
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
